@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="img-container">
+            <img onclick="modalOpen(this)" src="./images/others/2.jpg" alt="">
+        </div>
+        <div class="img-container">
+            <img onclick="modalOpen(this)" src="./images/others/3.jpg" alt="">
+        </div>
+        <div class="img-container">
+            <img onclick="modalOpen(this)" src="./images/others/1.jpg" alt="">
+        </div>
+        <div class="img-container">
+            <img onclick="modalOpen(this)" src="./images/others/4.png" alt="">
+        </div>
+    </div>
+
+    <div class="modal">
+        <span class="close" id="modal-close" onclick="modalClose()">&times;</span>
+        <img class="modal-content" src="./images/others/2.jpg" alt="">
+    </div>
+</body>
+<script src="./modal.js"></script>
+
+</html>
